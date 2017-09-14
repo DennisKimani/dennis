@@ -1,0 +1,14 @@
+<h2><%= @link.name %></h2><br>
+
+<li><strong>Description:-</strong><%= @link.description %> <br>
+    <strong>Github Link:-</strong><%= @link.github_link %> <br>
+    <strong>Launch:-</strong><%= @link.launch %>
+</li>
+
+
+<p><%= link_to "Edit", edit_link_path(@link) %></p>
+<p><%= link_to "Delete", link_path(@link),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %></p>
+
+<p><%= link_to "Projects", links_path %></p>
