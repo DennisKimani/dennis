@@ -1,5 +1,4 @@
-<h2>Wooo ......... Be ready to be mind blown by some of the greadtest things.</h2>
-
+<div class="container">
 <ul>
   <% @links.each do |link| %>
     <li><strong><%= link_to link.name, link_path(link) %></strong><%= link.description %></li>
@@ -9,3 +8,4 @@
 <hr>
 
 <%= link_to "New Link", new_link_path %>
+</div>
