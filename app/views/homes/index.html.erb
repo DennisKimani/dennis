@@ -1,16 +1,47 @@
 <body>
-<div class="container">
-  <div class="introduction center">
-    <h1 style="font-size: 50px; color: white;">Hi there, I'm Dennis.</h1>
-  </div>
-  <div class="row">
-    <div class="description">
-      <p style="font-size: 25px; color: white;">I'm a software engineer. I love to program because I get to make things out of nothing.</p>
+  <div class="container">
+    <div class="introduction center">
+      <h1 style="font-size: 50px; color: white;">Hi there, I'm Dennis.</h1>
     </div>
-    <div class="work">
-      <button class="button button1" name="button"><%= link_to "About", abouts_path %></a></button>
+    <div class="row">
+      <div class="description">
+        <p style="font-size: 25px; color: white;">I'm a software engineer. I love to program because I get to make things out of nothing.</p>
+      </div>
+
       <button class="button button1" name="button"><%= link_to "Projects", links_path %></button>
     </div>
   </div>
-</div>
+
+
+
+  <!-- Projects -->
+  <div class="projects">
+    <h1 class="center">PROJECTS.</h1>
+    <hr>
+    <div class="row">
+      <div class="col-lg-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://family-clan.herokuapp.com/"><%= image_tag "family.png", width:"500px" %></a>
+          <div class="card-body">
+            <h4 class="card-title">
+                <a href="https://family-clan.herokuapp.com/" style="color: white;">FAMILY CLAN</a>
+            </h4>
+            <p class="card-text">We all come from families even if not all may have the privillage of knowing them. This is an a community where all the clans of the families are registered to everyone to view and update the members of members.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 portfolio-item">
+        <div class="card h-100">
+          <a href="http://shoe-distribution-dennis.herokuapp.com/"><%= image_tag "shoe.png", width:"500px" %></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="http://shoe-distribution-dennis.herokuapp.com/" style="color: white;">SHOE-DISTRIBUTION.</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="center" href="/links" style="color: white; font-size:20px;">View more Projects.</a>
+  </div>
 </body>
