@@ -1,56 +1,96 @@
 <body>
-  <div class="container">
-    <div class="introduction">
-      <h1 style="font-size: 50px;">Hi there, I'm Dennis.</h1>
-      <p>I'm a software engineer. I love to program because I get to make things out of nothing.</p>
-    </div>
+  <div class="introduction">
+    <h1 style="font-size: 50px;">Hi there, I'm Dennis.</h1>
+    <p>I'm a software engineer. I love to program because I get to make things out of nothing.</p>
+    <a href="#about">about me</a>
+    <a href="#projects">Projects</a>
   </div>
 
   <!-- skills -->
-  <div class="skills">
-    <h2>My Skills</h2>
-    <p>
-      <strong>Strong:</strong>
-      HTML5, CSS, Git/Github, Javascript, JQuery, APIs, Emberjs, Nodejs,
-      <br>
-      Ruby, Ruby on Rails, Postgres, Agile Methodology, Deployment.</p>
-    <p>
-      <strong>Experienced:</strong>
-      Express/Jade, Gulp, Angularjs, Firebase.</p>
-  </div>
+  <section id="about" class="container content-section text-center">
+    <div class="skills">
+      <h2>My Skills</h2>
+      <p>
+        <strong>Strong:</strong>
+        HTML5, CSS, Git/Github, Javascript, JQuery, APIs, Emberjs, Nodejs,
+        <br>
+        Ruby, Ruby on Rails, Sinatra, Postgres, Agile Methodology, Deployment.</p>
+      <p>
+        <strong>Experienced:</strong>
+        Express/Jade, Gulp, Angularjs, Firebase.</p>
+    </div>
+  </section>
 
   <!-- Projects -->
-  <div class="projects">
-    <div class="text">
-      <h2>PROJECTS</h2>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-lg-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://family-clan.herokuapp.com/" target="_blank"><%= image_tag "family.png", width:"500px", height:"300px" %></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://family-clan.herokuapp.com/" target="_blank" style="color: white;">FAMILY CLAN</a>
-            </h4>
-            <p class="card-text">We all come from families even if not all may have the privillage of knowing them. This is an a community where all the clans of the families are registered to everyone to view and update the members of members.</p>
+  <section id="projects" class="container content-section text-center">
+    <div class="projects">
+      <div class="text">
+        <h2>PROJECTS</h2>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="https://family-clan.herokuapp.com/" target="_blank"><%= image_tag "family.png", width:"500px", height:"300px" %></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://family-clan.herokuapp.com/" target="_blank" style="color: white;">FAMILY CLAN</a>
+              </h4>
+              <p class="card-text">We all come from families even if not all may have the privillage of knowing them. This is an a community where all the clans of the families are registered to everyone to view and update the members of members.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="https://fought.herokuapp.com/" target="_blank"><%= image_tag "foughts.png", width:"500px", height:"300px" %></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://fought.herokuapp.com/" target="_blank" style="color: white;">FOUGHTS.KE.</a>
+              </h4>
+              <p class="card-text">A platform for people to either join as a host or as a partyholic. A host has the ability to create an event with the number of tickets available. Partyholics are able to buy tickets to the events.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://fought.herokuapp.com/" target="_blank"><%= image_tag "foughts.png", width:"500px", height:"300px" %></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://fought.herokuapp.com/" target="_blank" style="color: white;">FOUGHTS.KE.</a>
-            </h4>
-            <p class="card-text">A platform for people to either join as a host or as a partyholic. A host has the ability to create an event with the number of tickets available. Partyholics are able to buy tickets to the events.</p>
+      <div class="more">
+        <a href="/links" style="color: white; font-size:20px;">View more Projects.</a>
+      </div>
+    </div>
+  </section>
+</body>
+
+<!-- footer -->
+<footer>
+  <div class="container">
+    <div class="footer">
+      <div class="column">
+        <div class="col-md-4">
+          <p>Nairobi, Kenya</p>
+          <p>(+254) 799 670797</p>
+          <p>Email: dennisngugi.dk@gmail.com</p>
+        </div>
+        <div class="col-md-5">
+          <div class="source">
+            <a href="https://github.com/DennisKimani"><img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-64.png" alt="github"></a>
+            <p>Reference to all my applications code.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="col-md-4">
+            <a href="https://www.linkedin.com/in/dennis-kimani-663831147/"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_gray-48.png" alt="LinkedIn"></a>
+            <p>LinkedIn</p>
+          </div>
+          <div class="col-md-4">
+            <a href="https://twitter.com/colekimani1"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_gray-48.png" alt="Twitter"></a>
+            <p>Twitter</p>
+          </div>
+          <div class="col-md-4">
+            <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/google_circle_gray-48.png" alt="Google+"></a>
+            <p>Google+</p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="more">
-      <a href="/links" style="color: white; font-size:20px;">View more Projects.</a>
     </div>
   </div>
-</body>
+</div>
+</footer>
