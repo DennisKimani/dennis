@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
-body{
-  margin: 0px;
-}
+ .footer {
+   position: absolute;
+   right: 0;
+   left: 0;
+   padding: 50px;
+   background-color: #efefef;
+ }
