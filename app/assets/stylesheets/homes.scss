@@ -9,6 +9,10 @@ body {
   -o-background-size: cover;
   background-attachment: fixed;
   background-size: cover;
+
+}
+p{
+  font-size: 20px;
 }
 
 .button1 {
@@ -27,11 +31,26 @@ body {
   cursor: pointer;
 }
 
+.introduction{
+  text-align: center;
+  color: white;
+}
+
+.skills{
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+}
+
 .projects{
   width: 1200px;
   padding-top: 600px;
   padding-left: 30px;
   color: white;
+}
+
+.text{
+  text-align: center;
 }
 
 .portfolio-item {
