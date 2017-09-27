@@ -12,17 +12,19 @@ a{
 }
 
 .projects{
+  text-align: center;
   width: 1200px;
-  padding-right: 10px;
   color: white;
 }
 
 .text{
   text-align: center;
+  font-family: 'Crimson Text', serif;
 }
 
 .portfolio-item {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+  padding-left: 5px;
 }
 
 .card-img-top {
