@@ -45,6 +45,6 @@ class LinksController < ApplicationController
   private
 
   def link_params
-    params.require(:link).permit(:name, :description, :github_link, :launch)
+    params.require(:link).permit(:name, :description, :github_link, :launch, :image)
   end
 end
