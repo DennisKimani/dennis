@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/445628/pexels-photo-445628.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") no-repeat center center fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -29,11 +29,11 @@ a{
 }
 
 .circular-image {
-  border-radius:  50%;
+  border-radius:  10%;
 }
 
 .skills{
-  padding-top: 400px;
+  padding-top: 200px;
   text-align: center;
   color: white;
 }
