@@ -1,14 +1,23 @@
-<%= render "layouts/errors", :object => @link %>
+  <%= render "layouts/errors", :object => @link %>
 
-<%= form_for @link, :html => {:multipart => true} do |f| %>
-<%= f.label :name %>
-<%= f.text_field :name %>
-<%= f.label :description %>
-<%= f.text_field :description %>
-<%= f.label :github_link %>
-<%= f.text_field :github_link %>
-<%= f.label :launch %>
-<%= f.text_field :launch %>
-<%= f.file_field :image %>
-<%= f.submit %>
-<% end %>
+  <%= form_for @link, :html => {:multipart => true} do |f| %>
+  <div class="column">
+    <div class="col-md-6">
+    <p><%= f.label :name %></p>
+      <%= f.text_field :name %>
+      <br>
+    <p><%= f.label :description %></p>
+      <%= f.text_field :description %>
+    </div>
+    <div class="col-md-6">
+    <p><%= f.label :github_link %></p>
+      <%= f.text_field :github_link %>
+      <br>
+    <p><%= f.label :launch %></p>
+      <%= f.text_field :launch %>
+    </div>
+    <%= f.file_field :image %>
+    <br>
+    <%= f.submit %>
+  </div>
+  <% end %>
