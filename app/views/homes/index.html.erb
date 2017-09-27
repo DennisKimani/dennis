@@ -1,9 +1,12 @@
 <body>
   <div class="introduction">
     <h1 style="font-size: 50px;">Hi there, I'm Dennis.</h1>
-    <p>I'm a software engineer. I love to program because I get to make things out of nothing.</p>
-    <a href="#about">about me</a>
-    <a href="#projects">Projects</a>
+    <p>I'm a software engineer. I love to program because I get to make things out of nothing. <br> If I'm not working on an application am thinking of what I can build based on my current environment just for fun.</p>
+    <%= image_tag "me2.png", :class=> "circular-image", width:"350px", height:"250px" %>
+    <br>
+    <a href="#about" style="color:white;">My skills</a> |
+    <a href="#projects" style="color:white;">Projects</a>
+
   </div>
 
   <!-- skills -->
@@ -22,7 +25,7 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="container content-section text-center">
+  <section id="projects" class="container">
     <div class="projects">
       <div class="text">
         <h2>PROJECTS</h2>
@@ -52,9 +55,10 @@
           </div>
         </div>
       </div>
-      <div class="more">
-        <a href="/links" style="color: white; font-size:20px;">View more Projects.</a>
-      </div>
+      <!-- animation -->
+        <a href="/links" style="color: white;"><button data-hover="click me!">
+          <div>View More</div>
+        </button></a>
     </div>
   </section>
 </body>
