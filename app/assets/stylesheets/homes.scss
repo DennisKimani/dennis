@@ -10,62 +10,45 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-.navbar{
-  padding-top: 5px;
-  color: white;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-}
-p{
-  font-size: 20px;
-}
 
-ul{
-  font-size: 20px;
-}
-
-a{
-  font-size: 20px;
-}
-
-.introduction{
+.introduction {
   text-align: center;
   font-family: 'Libre Baskerville', serif;
   color: white;
   padding-top: 40px;
 }
 
-.button{
+.button {
   // background: transparentize($blue, $15);
 }
 
 .circular-image {
-  border-radius:  10%;
+  border-radius: 10%;
 }
 
-.skills{
+.skills {
   font-family: 'Crimson Text', serif;
-  padding-top: 200px;
   text-align: center;
   color: white;
 }
 
-.javascript{
+.javascript {
   text-align: center;
 }
 
-.projects{
+.projects {
   font-family: 'Crimson Text', serif;
   width: 1200px;
   padding-right: 10px;
   color: white;
 }
 
-.text{
+.text {
   text-align: center;
 }
 
 .portfolio-item {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .card-img-top {
@@ -73,61 +56,80 @@ a{
   height: 400px;
 }
 
-
-*, *:before, *:after{
+*,
+*:after,
+*:before {
   box-sizing: border-box;
-  padding: 0; margin: 0;
+  padding: 0;
+  margin: 0;
   text-decoration: none;
 }
 
-  section.container{
-    min-width: 500px;
-    margin: 10% auto;
-    text-align: center;
-  }
-    a:hover{border-bottom: 1px solid #111;}
-
-    button:hover{cursor: pointer}
-    button {
-      background: transparent; outline: none;
-      position: relative;
-      border: 2px solid #111;
-      padding: 15px 50px;
-      overflow: hidden;
-    }
-
-    /*button:before (attr data-hover)*/
-    button:hover:before{opacity: 1; transform: translate(0,0);}
-    button:before{
-      content: attr(data-hover);
-      position: absolute;
-      top: 1.1em; left: 0;
-      width: 100%;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-weight: 800;
-      font-size: .8em;
-      opacity: 0;
-      transform: translate(-100%,0);
-      transition: all .5s ease-in-out;
-    }
-      /*button div (button text before hover)*/
-      button:hover div{opacity: 0; transform: translate(100%,0)}
-      button div{
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-weight: 800;
-        font-size: .8em;
-        transition: all .5s ease-in-out;
-      }
-
-footer{
-  color: white;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-}
-.footer{
-  padding-top: 10px;
-}
-.source{
+section.container {
+  min-width: 500px;
+  margin: 10% auto;
   text-align: center;
 }
+
+a:hover {
+  border-bottom: 1px solid #111;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button {
+  background: transparent;
+  outline: none;
+  position: relative;
+  border: 2px solid #111;
+  padding: 15px 50px;
+  overflow: hidden;
+}
+/*button:before (attr data-hover)*/
+button:hover:before {
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+button:before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 1.1em;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 0.8em;
+  opacity: 0;
+  transform: translate(-100%,0);
+  transition: all 0.5s ease-in-out;
+}
+/*button div (button text before hover)*/
+button:hover div {
+  opacity: 0;
+  transform: translate(100%,0);
+}
+
+button div {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 0.8em;
+  transition: all 0.5s ease-in-out;
+}
+
+
+ footer{
+   color: white;
+   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+   bottom: 0px;
+ }
+ .footer{
+   padding-top: 10px;
+ }
+ .source{
+   text-align: center;
+ }
